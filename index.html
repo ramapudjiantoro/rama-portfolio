@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="site.css">
 <style>
   /* ── Hero ─────────────────────────────────────────────── */
-  .hero { padding: 168px 0 96px; }
+  .hero { padding: 112px 0 60px; }
   .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: center; }
-  .hero h1 { font-size: clamp(38px, 5.4vw, 62px); margin-bottom: 26px; }
+  .hero h1 { font-size: clamp(38px, 5.4vw, 62px); margin-bottom: 18px; }
   .hero h1 .gold { color: var(--gold); }
-  .hero-sub { font-size: 19px; color: var(--muted); max-width: 520px; margin-bottom: 16px; line-height: 1.6; }
+  .hero-sub { font-size: 18px; color: var(--muted); max-width: 520px; margin-bottom: 22px; line-height: 1.55; }
   .hero-guarantee { font-size: 15.5px; color: var(--text); max-width: 500px; margin-bottom: 34px; padding-left: 16px; border-left: 2px solid var(--gold); }
   .hero-cta { display: flex; gap: 13px; flex-wrap: wrap; }
 
@@ -35,27 +35,27 @@
   .hero-glow { position: absolute; top: -60px; right: -50px; width: 340px; height: 340px; background: radial-gradient(circle, rgba(232,179,64,0.14), transparent 68%); filter: blur(10px); z-index: -1; pointer-events: none; animation: glowDrift 9s ease-in-out infinite; }
 
   /* ── Stack strip ──────────────────────────────────────── */
-  .strip { padding: 26px 0; border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+  .strip { padding: 16px 0; border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
   .strip-inner { display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
   .strip-label { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-2); white-space: nowrap; }
   .strip-tools { display: flex; gap: 12px; flex-wrap: wrap; }
 
   /* ── Section heading ──────────────────────────────────── */
-  .sec-head { margin-bottom: 56px; max-width: 640px; }
+  .sec-head { margin-bottom: 36px; max-width: 640px; }
   .sec-head h2 { font-size: clamp(28px, 3.6vw, 40px); }
   .sec-head p { color: var(--muted); margin-top: 16px; font-size: 17px; }
 
   /* ── Why / trust ──────────────────────────────────────── */
   .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .why-card { padding: 30px 28px; }
-  .why-num { font-family: var(--font-mono); font-size: 12px; color: var(--gold); letter-spacing: 0.1em; margin-bottom: 18px; }
+  .why-card { padding: 22px 22px; }
+  .why-num { font-family: var(--font-mono); font-size: 12px; color: var(--gold); letter-spacing: 0.1em; margin-bottom: 10px; }
   .why-card h3 { font-size: 19px; margin-bottom: 10px; }
   .why-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
 
   /* ── Services ─────────────────────────────────────────── */
   .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .svc { padding: 32px 28px; }
-  .svc-ico { width: 44px; height: 44px; border-radius: 11px; background: var(--gold-soft); border: 1px solid var(--gold-line); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; color: var(--gold); }
+  .svc { padding: 22px 22px; }
+  .svc-ico { width: 40px; height: 40px; border-radius: 10px; background: var(--gold-soft); border: 1px solid var(--gold-line); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; color: var(--gold); }
   .svc-ico svg { width: 21px; height: 21px; }
   .svc h3 { font-size: 20px; margin-bottom: 11px; }
   .svc p { color: var(--muted); font-size: 15px; line-height: 1.62; margin-bottom: 18px; }
@@ -66,7 +66,7 @@
   .work-card { display: flex; flex-direction: column; overflow: hidden; }
   .work-thumb { height: 200px; border-bottom: 1px solid var(--border); }
   .work-thumb image-slot, .work-thumb .ph { width: 100%; height: 100%; border-radius: 0; border: 0; }
-  .work-body { padding: 26px 28px 28px; display: flex; flex-direction: column; flex: 1; }
+  .work-body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
   .work-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
   .work-cat { font-family: var(--font-mono); font-size: 12px; color: var(--muted-2); }
   .work-card h3 { font-size: 23px; margin-bottom: 12px; }
@@ -84,7 +84,7 @@
   .about-body h2 { font-size: clamp(26px, 3.4vw, 36px); margin-bottom: 22px; }
   .about-body p { color: var(--muted); font-size: 16.5px; line-height: 1.72; margin-bottom: 18px; }
   .about-body p strong { color: var(--text); font-weight: 600; }
-  .about-facts { display: flex; gap: 36px; flex-wrap: wrap; margin-top: 30px; padding-top: 28px; border-top: 1px solid var(--border); }
+  .about-facts { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--border); }
   .about-facts .f .n { font-family: var(--font-display); font-size: 26px; font-weight: 600; color: var(--gold); }
   .about-facts .f .l { font-size: 13px; color: var(--muted-2); margin-top: 4px; }
 
@@ -92,7 +92,7 @@
   .contact { text-align: center; }
   .contact-inner { max-width: 660px; margin: 0 auto; }
   .contact h2 { font-size: clamp(32px, 4.6vw, 52px); margin-bottom: 20px; }
-  .contact p { color: var(--muted); font-size: 18px; margin-bottom: 36px; }
+  .contact p { color: var(--muted); font-size: 17px; margin-bottom: 26px; }
   .contact-cta { display: flex; gap: 13px; justify-content: center; flex-wrap: wrap; }
 
   /* ── Mobile menu ──────────────────────────────────────── */
@@ -105,9 +105,9 @@
 
   @media (max-width: 900px) {
     .hero-grid, .about-grid { grid-template-columns: 1fr; }
-    .hero-photo { justify-self: start; margin-top: 12px; }
+    .hero-photo { justify-self: start; margin-top: 10px; }
     .why-grid, .svc-grid, .work-grid { grid-template-columns: 1fr; }
-    .hero { padding-top: 130px; }
+    .hero { padding: 96px 0 44px; }
     .about-photo { max-width: 340px; }
   }
   @media (max-width: 520px) {
@@ -159,7 +159,7 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <p class="eyebrow reveal">Solo, Indonesia &middot; Open for projects</p>
-      <h1 class="reveal" style="transition-delay:.05s">I build the <span class="gold">websites, automation &amp; AI systems</span> that make service businesses grow.</h1>
+      <h1 class="reveal" style="transition-delay:.05s">I help service businesses <span class="gold">automate bookings</span>.</h1>
       <p class="hero-sub reveal" style="transition-delay:.1s">For guest houses, carwashes, and small operators — built by someone who runs one, not just builds for them.</p>
       <div class="hero-cta reveal" style="transition-delay:.15s">
         <a class="btn btn-gold" href="#work">See my work
